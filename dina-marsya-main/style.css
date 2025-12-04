@@ -1,0 +1,55 @@
+h1   {
+          background-color:grey;
+color:green; }
+	   
+body   {
+          font-family:arial;
+background-color:#A2888F4;}
+		  
+p  { color:#A2888F4;}
+
+
+
+ul{background-color: green;
+   border: solid 2px 
+   border-color: blue 
+   border-top-style : line;
+   border-bottom-style: line;
+   padding-top:2px; 
+}
+  
+nav ul{
+    background-color: red;
+	border: solid 1px black;
+	list-style-type:none;
+	padding:0px;
+	margin: 0px;
+	overflow: hidden;
+}
+
+nav a{
+	text-decoration: none;
+	color:blue;
+	padding: 10px;
+	display: block;
+	text-align:center;
+}
+
+nav a:hover{
+    background-color:blue;
+}
+
+nav li{
+float: left;}
+
+.bawah ul{
+background-color:lightblue;}
+
+.bawah li{
+float:center-left;}
+
+
+.bawah a:hover{
+background-color:black;}
+
+         
