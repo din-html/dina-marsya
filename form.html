@@ -1,34 +1,39 @@
-<html>
-<head>
-     <title-Borang Forms</title>
-</head>
 
-<body>
+<!-- saved from url=(0047)file:///C:/Users/KMS_PC09v2/Downloads/form.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+     </head><body id="first-page" style="color: black; background-color: yellow;"><title-borang forms<="" title="">
+
+
+
 <h1>Welcome</h1>
 <p>Fill your information</p>
 
-<form action="index.php" method="POST" style="background-color: lightyellow;color: black
-;border:1px black solid">  
+<button onclick="mula()"> START </button><br>
+<button onclick="darkmode()" style="background-color: blue ; color: Yellow"> Dark Mode </button>
+<button onclick="lightmode()" style="background-color: green ; color: Yellow"> Light Mode</button>
+
+<br>
+<form onsubmit="hantaq();return false;" style="border:1px black solid">  
 	
 
      <label for="name" style="padding:1.5px;color:blue;background-color : lightgreen">Name</label>
-     <input type="text" id="name" required placeholder="Nama penuh"><br>
+     <input type="text" id="name" required="" placeholder="Nama penuh"><br>
 	 
 	 <label for="phone">phone number<label>
-	 <input type="phone" id = "phone"> <br>
+	 <input type="phone" id="phone"> <br>
 	 
 	 <label for="pass">password</label>
-	 <input type= "password" id="pass" required> <br>
+	 <input type="password" id="pass" required=""> <br>
 	 
 	 <label for="email">Email</label>
 	 <input type="email" id="email"> <br>
 	 
 	 <label for="category">category :</label>
-	    <label for= "student">student</label>
+	    <label for="student">student</label>
 		<input type="radio" id="student" name="category">
-        <label for= "lecturer">lecturer</label>
+        <label for="lecturer">lecturer</label>
 		<input type="radio" id="lecturer" name="category">
-		<label for= "visitor">visitor</label>
+		<label for="visitor">visitor</label>
 		<input type="radio" id="visitor" name="category">
 		<br>
 		
@@ -65,11 +70,42 @@
 	
 	 
      <br><br>
-     <input type= "submit">
-	 <input type= "reset">
-
-<form>
+     <input type="submit">
+	 <input type="reset">
 
 
-</body>
-</html>
+<hr>
+<h1>Submitted Info </h1>
+<p id="result"></p>
+	 
+
+<script>
+alert("Selamat Datang");
+function mula() {
+    alert ("Boleh start isi borang. Tunggu apa lagi");
+	}
+function hantaq (){
+    var nama = document.getElementById("Name").value;
+	var fon = document.getElementById("Phone").value;
+	var email = document.getElementById("Email").value;
+	var comp = document.getElementById("complain").value;
+	
+	alert ("Terima kasih " + nama +" kami akan hubungi anda di " + fon);
+	
+	document.getElementById("result").innerHTML = "Terima kasih " + nama + 
+	"kami akan hubungi anda di" + fon + "atau" + email;
+	}
+function darkmode(){
+   document.getElementById("first-page").style.color="red";
+   document.getElementById("first-page").style.backgroundColor="darkblue";
+}
+
+function lightmode(){
+   document.getElementById("first-page").style.color="black";
+   document.getElementById("first-page").style.backgroundColor="yellow";
+      
+}
+			
+</script>
+
+</label></label></form></title-borang></body></html>
