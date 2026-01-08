@@ -1,20 +1,25 @@
+<html>
+<head>
+       <title>Form</title>
+	   <script src="script.js"></script>
+</head>
 
-<!-- saved from url=(0047)file:///C:/Users/KMS_PC09v2/Downloads/form.html -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-     </head><body id="first-page" style="color: black; background-color: yellow;"><title-borang forms<="" title="">
+<body id="first-page">
 
-
-
-<h1>Welcome</h1>
+<h1 id="welcome"> Welcome</h1>
+<button onclick="welc()" style="font-size:12px">Change This Color</button>
 <p>Fill your information</p>
 
 <button onclick="mula()"> START </button><br>
 <button onclick="darkmode()" style="background-color: blue ; color: Yellow"> Dark Mode </button>
-<button onclick="lightmode()" style="background-color: green ; color: Yellow"> Light Mode</button>
+<button onclick="lightmode()" style="background-color: green ; color: Yellow"> Light Mode</button> <br><br>
+
+<button onclick="LargeText()">LARGE TEXT</button>
+<button onclick="SmallText()">SMALL TEXT</button>
 
 <br>
-<form onsubmit="hantaq();return false;" style="border:1px black solid">  
-	
+<form id="form" onsubmit="hantaq();return false;" style="border:1px black solid">  
+<button onclick="borang()">CHANGE FORM COLOR </button> <br>
 
      <label for="name" style="padding:1.5px;color:blue;background-color : lightgreen">Name</label>
      <input type="text" id="name" required="" placeholder="Nama penuh"><br>
@@ -79,33 +84,6 @@
 <p id="result"></p>
 	 
 
-<script>
-alert("Selamat Datang");
-function mula() {
-    alert ("Boleh start isi borang. Tunggu apa lagi");
-	}
-function hantaq (){
-    var nama = document.getElementById("Name").value;
-	var fon = document.getElementById("Phone").value;
-	var email = document.getElementById("Email").value;
-	var comp = document.getElementById("complain").value;
-	
-	alert ("Terima kasih " + nama +" kami akan hubungi anda di " + fon);
-	
-	document.getElementById("result").innerHTML = "Terima kasih " + nama + 
-	"kami akan hubungi anda di" + fon + "atau" + email;
-	}
-function darkmode(){
-   document.getElementById("first-page").style.color="red";
-   document.getElementById("first-page").style.backgroundColor="darkblue";
-}
 
-function lightmode(){
-   document.getElementById("first-page").style.color="black";
-   document.getElementById("first-page").style.backgroundColor="yellow";
-      
-}
-			
-</script>
-
-</label></label></form></title-borang></body></html>
+</body>
+</html>
